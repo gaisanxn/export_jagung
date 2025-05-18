@@ -1,0 +1,1387 @@
+/*font impor*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* Reset CSS (opsional, tapi baik untuk konsistensi) */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif; /* Gunakan Montserrat untuk heading */
+
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Gaya Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #5cb85c; /* Warna hijau modern */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4cae4c;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 8px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+        display: block; /* Agar gambar di dalam link bisa diatur ukurannya */
+
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo img {
+    height: auto; /* Biarkan tinggi menyesuaikan aspek rasio */
+    max-height: 30px; /* Atur tinggi maksimum logo sesuai keinginan Anda */
+    /* Anda juga bisa menggunakan width jika ingin mengatur lebar, misalnya: */
+    /* max-width: 150px; */
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #5cb85c;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    padding: 5px 0;
+    background-color: #f9f9f9;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Unggulan Section */
+.unggulan {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.unggulan h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.unggulan-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.unggulan-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.unggulan-item img {
+    max-width: 300px;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.unggulan-item h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.unggulan-item p {
+    color: #666;
+    
+}
+
+/* Content Page (Tentang Kami, Kontak)
+/* Lanjutan Content Page (Tentang Kami, Kontak) */
+.content-page {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.content-page h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-page p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.content-page ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-page ul li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Kontak Page */
+.kontak-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.kontak-info div {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.kontak-info h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.kontak-info p {
+    color: #666;
+}
+
+.kontak-page form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.kontak-page .form-group {
+    margin-bottom: 20px;
+}
+
+.kontak-page label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.kontak-page input[type="text"],
+.kontak-page input[type="email"],
+.kontak-page textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.kontak-page textarea {
+    resize: vertical;
+}
+
+.kontak-page button[type="submit"] {
+    background-color: #007bff; /* Warna biru modern untuk tombol submit */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.kontak-page button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Produk Page */
+.produk-page .produk-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.produk-page .produk-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.produk-page .produk-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produk-page .produk-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.produk-page .produk-item p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.produk-page .produk-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.produk-page .produk-item ul li {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+.produk-page .produk-item .button {
+    display: inline-block;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.produk-page .produk-item .button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .unggulan-list {
+        grid-template-columns: 1fr;
+    }
+
+    .kontak-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CSS untuk gambar di halaman Tentang Kami */
+.tentang-kami-image-container {
+    width: 50%;
+    margin: 30px auto; /* Untuk penengahan horizontal menggunakan margin */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex; /* Aktifkan flexbox */
+    justify-content: center; /* Tengahkan secara horizontal */
+    align-items: center; /* Tengahkan secara vertikal (jika tinggi container lebih besar dari gambar) */
+}
+
+.tentang-kami-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Anda bisa menambahkan variasi ukuran atau tata letak jika diperlukan, misalnya: */
+
+@media (max-width: 768px) {
+    .tentang-kami-image-container {
+        margin-bottom: 20px;
+    }
+}
+
+.tentang-kami-image-container.small-image img {
+    max-width: 50%;
+    margin: 0 auto 20px; /* Membuat gambar lebih kecil dan berada di tengah */
+}
+
+.tentang-kami-image-container.rounded-corners img {
+    border-radius: 10px;
+}
+
+/* Detail Produk Page */
+.detail-produk-page .detail-produk {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.detail-produk-page .detail-produk-image {
+    flex: 1;
+    max-width: 500px;
+        aspect-ratio: 1 / 1; /* Rasio 1:1 (persegi) - Anda bisa menggantinya */
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detail-produk-page .detail-produk-image img {
+    display: block;
+    width: 100%;
+        height: 100%; /* Gambar mengisi seluruh area container */
+    object-fit: cover; /* Gambar akan diisi dan dipotong agar sesuai rasio */
+
+}
+
+.detail-produk-page .detail-produk-info {
+    flex: 1;
+}
+
+.detail-produk-page .detail-produk-info h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.detail-produk-page .detail-produk-info h3 {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.detail-produk-page .detail-produk-info ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.detail-produk-page .detail-produk-info ul li {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.detail-produk-page .detail-produk-info ul li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-produk-page .detail-produk-info p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.detail-produk-page .detail-produk-info .kembali-button {
+    background-color: #6c757d; /* Warna abu-abu untuk tombol kembali */
+}
+
+.detail-produk-page .detail-produk-info .kembali-button:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive untuk halaman detail produk */
+@media (max-width: 768px) {
+    .detail-produk-page .detail-produk {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .detail-produk-page .detail-produk-image {
+        max-width: 100%;
+    }
+}
+
+/* Responsive Design - Lebih Lengkap */
+
+/* Ukuran Layar Sangat Besar (Desktop dengan resolusi tinggi) - 2560px ke atas */
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2000px; /* Sesuaikan jika perlu */
+        padding: 40px;
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+
+
+    .logo a {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin-left: 30px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    .hero .container {
+        padding: 80px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 4em;
+        margin-bottom: 30px;
+    }
+
+    .hero-content p {
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
+    .button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border-radius: 8px;
+    }
+
+    .unggulan {
+        padding: 80px 0;
+    }
+
+    .unggulan h2 {
+        font-size: 3em;
+        margin-bottom: 40px;
+    }
+
+    .unggulan-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px;
+    }
+
+    .unggulan-item {
+        padding: 40px;
+    }
+
+    .unggulan-item img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .unggulan-item h3 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .content-page {
+        padding: 80px 0;
+    }
+
+    .content-page h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+    }
+
+    .content-page p {
+        font-size: 1.2em;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+
+    .produk-page .produk-list {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px;
+    }
+
+    .produk-page .produk-item {
+        padding: 30px;
+    }
+
+    .produk-page .produk-item img {
+        margin-bottom: 20px;
+    }
+
+    .produk-page .produk-item h3 {
+        font-size: 1.6em;
+        margin-bottom: 12px;
+    }
+
+    .detail-produk-page .detail-produk {
+        gap: 60px;
+    }
+
+    .detail-produk-page .detail-produk-image {
+        max-width: 700px;
+    }
+
+    .detail-produk-page .detail-produk-info h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .detail-produk-page .detail-produk-info h3 {
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .detail-produk-page .detail-produk-info p {
+        font-size: 1.2em;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 30px 0;
+        font-size: 1.1em;
+    }
+}
+
+/* Ukuran Layar Desktop Besar - 1440px */
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px; /* Kembali ke ukuran default atau sesuaikan */
+    }
+
+    /* Mungkin ada penyesuaian tipis pada font-size atau padding jika diperlukan */
+}
+
+/* Ukuran Layar Laptop - 1024px */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+        padding: 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Kembali ke horizontal */
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .unggulan-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+
+    .produk-page .produk-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+
+    .detail-produk-page .detail-produk {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .detail-produk-page .detail-produk-image {
+        max-width: 100%;
+    }
+}
+
+/* Ukuran Tablet - 768px */
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    .hero .container {
+        padding: 40px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .unggulan-list {
+        grid-template-columns: 1fr;
+    }
+
+    .produk-page .produk-list {
+        grid-template-columns: 1fr;
+    }
+
+    .kontak-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ukuran Mobile Besar - 425px */
+@media (max-width: 425px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo a {
+        font-size: 1.3em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    .unggulan h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .unggulan-item {
+        padding: 20px;
+    }
+
+    .unggulan-item img {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .unggulan-item h3 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .content-page h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .content-page p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .produk-page .produk-item h3 {
+        font-size: 1.2em;
+    }
+
+    .detail-produk-page .detail-produk-info h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .detail-produk-page .detail-produk-info h3 {
+        font-size: 1.1em;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .detail-produk-page .detail-produk-info p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+}
+
+/* Ukuran Mobile Sedang - 375px */
+@media (max-width: 375px) {
+    /* Mungkin ada penyesuaian font-size yang lebih kecil atau padding */
+}
+
+/* Ukuran Mobile Kecil - 320px */
+@media (max-width: 320px) {
+    /* Penyesuaian lebih lanjut untuk layar yang sangat kecil */
+    .logo a {
+        font-size: 1.2em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.6em;
+    }
+
+    .unggulan h2 {
+        font-size: 1.8em;
+    }
+
+    .content-page h1 {
+        font-size: 1.6em;
+    }
+
+    .produk-page .produk-item h3 {
+        font-size: 1.1em;
+    }
+
+    .detail-produk-page .detail-produk-info h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* Tambahkan media queries lain sesuai kebutuhan Anda untuk ukuran layar yang spesifik */
+/* CSS untuk Hamburger Menu */
+.hamburger-button {
+    display: none; /* Sembunyikan secara default */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    z-index: 101; /* Pastikan di atas navigasi saat terbuka */
+}
+
+.hamburger-button span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hamburger-button span:last-child {
+    margin-bottom: 0;
+}
+
+.main-nav {
+    display: flex; /* Tetap flex untuk desktop */
+    justify-content: flex-end; /* Pindahkan ke kanan untuk desktop */
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex; /* Tetap flex untuk desktop */
+}
+
+/* Gaya saat hamburger menu aktif (opsional, untuk animasi) */
+.hamburger-button.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.main-nav.mobile-open {
+    display: block; /* Tampilkan saat mobile menu terbuka */
+    position: absolute;
+    top: 100%; /* Di bawah header */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.main-nav.mobile-open ul {
+    flex-direction: column;
+}
+
+.main-nav.mobile-open ul li {
+    margin: 10px 0;
+}
+
+/* Media Query untuk Layar di Bawah 1100px */
+@media (max-width: 1100px) {
+    .main-nav {
+        display: none; /* Sembunyikan navigasi default */
+    }
+
+    .hamburger-button {
+        display: block; /* Tampilkan tombol hamburger */
+    }
+
+    header .container {
+        position: relative; /* Untuk memposisikan tombol hamburger */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Penyesuaian Hamburger Menu untuk Ukuran Mobile Lebih Kecil */
+@media (max-width: 375px) {
+    .hamburger-button {
+        width: 24px; /* Perkecil lebar tombol */
+        height: 20px; /* Perkecil tinggi tombol */
+        right: 15px; /* Geser sedikit ke kiri jika terlalu dekat tepi */
+    }
+
+    .hamburger-button span {
+        height: 2px; /* Perkecil tinggi garis */
+        margin-bottom: 4px; /* Perkecil jarak antar garis */
+    }
+
+    .hamburger-button.active span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg); /* Sesuaikan posisi rotasi */
+    }
+
+    .hamburger-button.active span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg); /* Sesuaikan posisi rotasi */
+    }
+
+    .logo a {
+        font-size: 1.1em; /* Perkecil ukuran logo jika terlalu besar */
+    }
+
+    .main-nav.mobile-open {
+        padding: 15px; /* Kurangi padding pada menu dropdown */
+    }
+
+    .main-nav.mobile-open ul li a {
+        font-size: 0.9em; /* Perkecil ukuran teks menu */
+    }
+}
+
+@media (max-width: 320px) {
+    .hamburger-button {
+        width: 20px;
+        height: 16px;
+        right: 10px;
+    }
+
+    .hamburger-button span {
+        height: 1.5px;
+        margin-bottom: 3px;
+    }
+
+    .hamburger-button.active span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .hamburger-button.active span:nth-child(3) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .logo a {
+        font-size: 1em;
+    }
+
+    .main-nav.mobile-open ul li a {
+        font-size: 0.85em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* ... kode CSS Anda yang lain untuk ukuran 768px ... */
+
+    .unggulan-list {
+        grid-template-columns: 1fr; /* Tetap satu kolom */
+    }
+
+    .unggulan-item {
+        text-align: center; /* Pastikan teks tetap tengah */
+    }
+
+    .unggulan-item img {
+        max-width: 80%; /* Ubah max-width menjadi persentase agar responsif terhadap lebar item */
+        height: auto; /* Biarkan tinggi menyesuaikan aspek rasio */
+        margin-bottom: 15px; /* Tetap berikan margin bawah */
+    }
+
+    .unggulan-item h3 {
+        font-size: 1.3em; /* Sesuaikan ukuran font heading jika perlu */
+    }
+
+ 
+}
+
+/* Kontak Page - Maps (Revisi) */
+.kontak-page .maps-container {
+    width: 100%;
+    max-width: 800px; /* Contoh: Batasi lebar maksimum peta menjadi 800px */
+    overflow: hidden;
+    padding-bottom: 60%; /* Contoh: Sesuaikan kembali rasio aspek jika perlu */
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto; /* Untuk menengahkan peta jika max-width lebih kecil dari 100% */
+    margin-right: auto; /* Untuk menengahkan peta jika max-width lebih kecil dari 100% */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-page .maps-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .kontak-page .maps-container {
+        padding-bottom: 100%; /* Contoh penyesuaian rasio untuk tablet */
+        max-width: none; /* Hilangkan max-width agar mengisi lebar di layar kecil */
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .kontak-page .maps-container {
+        padding-bottom: 120%; /* Contoh penyesuaian rasio untuk mobile */
+    }
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive Design Header dengan Logo Gambar */
+
+/* Ukuran Layar Desktop Besar - 1440px */
+@media (max-width: 1440px) {
+    header {
+        padding: 10px 0; /* Sesuaikan padding header jika perlu */
+    }
+
+    .logo img {
+        max-height: 35px; /* Sedikit lebih besar dari default jika ruang memungkinkan */
+    }
+}
+
+/* Ukuran Layar Laptop - 1024px */
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 0; /* Pertahankan atau sesuaikan padding */
+    }
+
+    header .container {
+        flex-direction: row; /* Pastikan kembali ke row jika sebelumnya diubah */
+        align-items: center; /* Tengahkan logo dan navigasi secara vertikal */
+    }
+
+    .logo {
+        margin-bottom: 0; /* Hilangkan margin bawah logo jika ada */
+    }
+
+    .logo img {
+        max-height: 30px; /* Ukuran logo untuk laptop */
+    }
+
+    nav ul {
+        flex-direction: row; /* Pastikan navigasi horizontal */
+        margin-top: 0; /* Hilangkan margin atas navigasi jika ada */
+    }
+
+    nav ul li {
+        margin-left: 15px; /* Sesuaikan jarak antar item navigasi */
+    }
+}
+
+/* Ukuran Tablet - 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Pertahankan atau sesuaikan padding */
+    }
+
+    header .container {
+        flex-direction: row; /* Pastikan flex row untuk logo dan hamburger */
+        justify-content: space-between; /* Beri ruang antara logo dan hamburger */
+        align-items: center; /* Tengahkan vertikal */
+    }
+
+    .logo {
+        margin-bottom: 0; /* Hilangkan margin bawah logo */
+    }
+
+    .logo img {
+        max-height: 28px; /* Ukuran logo untuk tablet */
+    }
+
+    /* Hamburger button sudah diatur di media query ini */
+}
+
+/* Ukuran Mobile Besar - 425px */
+@media (max-width: 425px) {
+    header {
+        padding: 8px 0; /* Sedikit kurangi padding untuk mobile */
+    }
+
+    .logo img {
+        max-height: 24px; /* Ukuran logo untuk mobile besar */
+    }
+
+    .hamburger-button {
+        right: 15px; /* Sesuaikan posisi hamburger jika perlu */
+    }
+}
+
+/* Ukuran Mobile Sedang - 375px */
+@media (max-width: 375px) {
+    .logo img {
+        max-height: 22px; /* Ukuran logo untuk mobile sedang */
+    }
+
+    .hamburger-button {
+        right: 10px; /* Sesuaikan posisi hamburger jika perlu */
+    }
+}
+
+/* Ukuran Mobile Kecil - 320px */
+@media (max-width: 320px) {
+    header {
+        padding: 6px 0; /* Kurangi lagi padding untuk mobile kecil */
+    }
+
+    .logo img {
+        max-height: 20px; /* Ukuran logo untuk mobile kecil */
+    }
+
+    .hamburger-button {
+        right: 5px; /* Sesuaikan posisi hamburger jika perlu */
+    }
+}
+
+/* Gaya Default (Light Mode) - Sebagian besar gaya Anda sudah seperti ini */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Tambahkan transisi untuk perubahan halus */
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* ... gaya header lainnya ... */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a {
+    color: #555;
+}
+
+.unggulan-item {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unggulan-item h3,
+.content-page h1,
+.kontak-info h3,
+.produk-page .produk-item h3,
+.detail-produk-page .detail-produk-info h2,
+.detail-produk-page .detail-produk-info h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+}
+
+body.dark-mode header {
+    background-color: #282a36;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode nav ul li a {
+    color: #f8f8f2;
+}
+
+body.dark-mode nav ul li a:hover,
+body.dark-mode nav ul li a.active {
+    color: #50fa7b; /* Warna aksen dark mode */
+}
+
+body.dark-mode .unggulan-item {
+    background-color: #44475a;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .unggulan-item h3,
+body.dark-mode .content-page h1,
+body.dark-mode .kontak-info h3,
+body.dark-mode .produk-page .produk-item h3,
+body.dark-mode .detail-produk-page .detail-produk-info h2,
+body.dark-mode .detail-produk-page .detail-produk-info h3 {
+    color: #f8f8f2;
+}
+
+body.dark-mode footer {
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+body.dark-mode .button {
+    background-color: #6272a4; /* Warna tombol dark mode */
+    color: #f8f8f2;
+}
+
+body.dark-mode .button:hover {
+    background-color: #44475a;
+}
+
+body.dark-mode .kontak-info div {
+    background-color: #44475a;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .kontak-page form {
+    background-color: #44475a;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .kontak-page label,
+body.dark-mode .kontak-page input[type="text"],
+body.dark-mode .kontak-page input[type="email"],
+body.dark-mode .kontak-page textarea {
+    color: #f8f8f2;
+    border-color: #6272a4;
+    background-color: #3b3d48;
+}
+
+body.dark-mode .kontak-page button[type="submit"] {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+body.dark-mode .kontak-page button[type="submit"]:hover {
+    background-color: #8be9fd;
+    color: #282a36;
+}
+
+body.dark-mode .produk-page .produk-item {
+    background-color: #44475a;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-mode .produk-page .produk-item p,
+body.dark-mode .produk-page .produk-item ul li {
+    color: #f8f8f2;
+}
+
+body.dark-mode .detail-produk-page .detail-produk {
+    background-color: #282a36; /* Jika perlu latar belakang detail produk juga gelap */
+}
+
+body.dark-mode .detail-produk-page .detail-produk-info p,
+body.dark-mode .detail-produk-page .detail-produk-info ul li {
+    color: #f8f8f2;
+}
+
+/* Gaya untuk tombol toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #555;
+    position: relative; /* Untuk mengatur posisi ikon */
+    width: 40px; /* Sesuaikan lebar tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle .light-icon,
+.theme-toggle .dark-icon {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.theme-toggle.dark .light-icon {
+    opacity: 0;
+}
+
+.theme-toggle.light .dark-icon {
+    opacity: 0;
+}
+
+@media (max-width: 1100px) {
+    .theme-toggle {
+        right: 60px; /* Sesuaikan posisi tombol toggle di mobile */
+    }
+}
